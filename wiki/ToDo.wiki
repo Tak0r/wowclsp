@@ -1,4 +1,4 @@
-#freely choose the dateorder
-#rewrite in c#
-#zip option
-#choose time between events which determines if the log will be split!
+* freely choose the dateorder
+* rewrite in c#
+* zip option
+* choose time between events which determines if the log will be split!
