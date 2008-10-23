@@ -1,3 +1,4 @@
+#labels Featured
 ===v1.3 21.10.2008===
 ----
  * # changed .NET depencies to .NET 2.0 for more compability at Mac and Linux Systems via Mono needs some testing tough.
