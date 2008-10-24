@@ -1,4 +1,11 @@
 #labels Featured
+===v1.4 25.10.2008===
+----
+ * + implemented user specific dateformat
+ * + implemented user specific splittrigger (time between 2 lines)
+ * # changed codebase from c++ cli to C#
+ * # changed code comments to english from german for better understanding, at least I hope so!
+ * ~ delete present splittet logfiles before creating them again. Before the Program would try to append them.
 ===v1.3 21.10.2008===
 ----
  * # changed .NET depencies to .NET 2.0 for more compability at Mac and Linux Systems via Mono needs some testing tough.
