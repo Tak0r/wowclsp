@@ -144,7 +144,7 @@ namespace WoW_Combatlog_Splitter
             this.edt_dateformat.Name = "edt_dateformat";
             this.edt_dateformat.Size = new System.Drawing.Size(113, 20);
             this.edt_dateformat.TabIndex = 8;
-            this.edt_dateformat.Text = "yyyy.mm.dd_HHss";
+            this.edt_dateformat.Text = "yyyy.MM.dd_HHss";
             // 
             // label1
             // 

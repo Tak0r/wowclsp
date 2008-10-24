@@ -48,7 +48,7 @@ namespace WoW_Combatlog_Splitter
         private void btn_parse_Click(object sender, EventArgs e)
         {
             // Check if Dateformat is Valid!
-            Regex date_format = new Regex("^[MdyHms_.\\s-]*$", RegexOptions.Singleline);
+            Regex date_format = new Regex("^[MdyHhmst_.\\s-]*$", RegexOptions.Singleline);
             Match md = date_format.Match(edt_dateformat.Text);
 
             // Check if Splittime is Valid!
