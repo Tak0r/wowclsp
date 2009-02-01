@@ -144,7 +144,7 @@ namespace WoW_Combatlog_Splitter
             this.edt_dateformat.Name = "edt_dateformat";
             this.edt_dateformat.Size = new System.Drawing.Size(113, 20);
             this.edt_dateformat.TabIndex = 8;
-            this.edt_dateformat.Text = "yyyy.MM.dd_HHss";
+            this.edt_dateformat.Text = "yyyy.MM.dd_HHmm";
             // 
             // label1
             // 
@@ -191,7 +191,7 @@ namespace WoW_Combatlog_Splitter
             this.Controls.Add(this.btn_combatlog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WoWCombatlogSplitter";
-            this.Text = "WoW Combatlog Splitter";
+            this.Text = "WoW Combatlog Splitter 1.5";
             this.ResumeLayout(false);
             this.PerformLayout();
 
