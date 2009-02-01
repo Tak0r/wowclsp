@@ -85,6 +85,7 @@ namespace WoW_Combatlog_Splitter
 
                 long line_count = 0;
                 int diff_logs = 0;
+                int _year = 0;
 
                 Stopwatch parsetime = new Stopwatch();
 
@@ -108,9 +109,17 @@ namespace WoW_Combatlog_Splitter
                     Match line_match = date_match.Match(line);
                     GroupCollection group_match = line_match.Groups;
 
+                    // WoWCombatLog.txt doesnt contain year so month greater than actual then we need set year to last year
+                    // Newyear fix by scr34m thx for that =)
+                    _year = currdate.Year;
+					if (currdate.Month < Convert.ToInt32(group_match["months"].Value) )
+					{
+						_year--;
+					}
+
                     // set the parsed linedate into a time object
                     DateTime linedate = new DateTime(
-                                        currdate.Year,  // Jahr fake it to the current year... common bliss was it too much to include it too?
+                                        _year,  // fake the year it to the current year... common blizz was it too much to include it too?
                                         Convert.ToInt32(group_match["months"].Value), // month
                                         Convert.ToInt32(group_match["days"].Value), // day
                                         Convert.ToInt32(group_match["hours"].Value), // hour
@@ -126,7 +135,7 @@ namespace WoW_Combatlog_Splitter
 
                     // if the timeframe between 2 lines is greater than 2 hours or
                     // we are at the first line, create a new logfile
-                    if (Convert.ToInt32(timediff.TotalSeconds) > Convert.ToInt32(edt_splittime.Text) || line_count == 0)
+                    if (Convert.ToInt32(timediff.TotalMinutes) > Convert.ToInt32(edt_splittime.Text) || line_count == 0)
                     {
 
                         logname = "WoWCombatLog_" + String.Format("{0:" + edt_dateformat.Text + "}", lastdate) + ".txt";
