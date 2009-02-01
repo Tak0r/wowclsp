@@ -1,4 +1,12 @@
 #labels Featured
+===v1.5 01.02.2009===
+----
+ * ~ fix splitting of the logs since it used seconds not minutes as pointed out in the form :(, thx scr34m
+ * ~ added new years check thx scr34m again
+ * ~ changed default logfile name to "yyyy.MM.dd_HHmm"
+
+sorry didn't get the time to update it sooner!
+
 ===v1.4 25.10.2008===
 ----
  * + implemented user specific dateformat
