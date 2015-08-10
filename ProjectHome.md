@@ -1,0 +1,1 @@
+Splits very big combatlogs from World of Warcraft to Raid Events!
